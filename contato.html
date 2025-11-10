@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Storysphere</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+<header class="header">
+    <div class="header-content">
+        <div class="logo">
+            <div class="logo-icon"><img src="img/favicon.png" alt="Storysphere"></div>
+            <span>STORYSPHERE</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="🔍 Buscar mídias, usuários, autores...">
+        </div>
+        <!-- Botão Hambúrguer -->
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav class="nav">
+            <a href="index.html">Início</a>
+            <a href="explorar.html">Explorar</a>
+            <a href="comunidade.html">Comunidade</a>
+            <a href="blog.html">Blog</a>
+            <a href="sobre-nos.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+            <!-- <a href="recompensas.html">Recompensas</a> -->
+            <!-- <a href="login.html" class="btn btn-secondary">Entrar</a> -->
+            <a href="cadastro.html" class="btn btn-primary">Começe Agora</a>
+        </nav>
+    </div>
+</header>
+
+    <div class="main-container">
+        <div id="contato" class="page starfield-bg active">
+            <canvas class="starfield-canvas"></canvas>
+                    <div class="logo" style="justify-content: center; font-size: 2rem;">
+                        <div class="logo-icon" style="width: 60px; height: 60px;"><img src="img/favicon.png" alt="Storysphere"></div>
+                        <span>STORYSPHERE</span>
+                    </div>
+            <div class="form-container">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h2 class="section-title" style="margin: 1.5rem 0 0.5rem;">📬 Fale Conosco</h2>
+                    <p style="color: var(--text-muted);">Tem alguma dúvida, sugestão ou feedback? Adoraríamos ouvir de você!</p>
+                </div>
+
+                <div class="form-card">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Seu Nome</label>
+                            <input type="text" class="form-input" placeholder="Digite seu nome completo">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Seu E-mail</label>
+                            <input type="email" class="form-input" placeholder="seu@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Assunto</label>
+                            <input type="text" class="form-input" placeholder="Sobre o que você gostaria de falar?">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Sua Mensagem</label>
+                            <textarea class="form-input" placeholder="Escreva sua mensagem aqui..." rows="6"></textarea>
+                        </div>
+
+                        <button type="button" class="btn btn-primary" style="width: 100%;">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Todos os direitos reservados © 2025</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

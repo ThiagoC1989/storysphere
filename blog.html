@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Storysphere</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+<header class="header">
+    <div class="header-content">
+        <div class="logo">
+            <div class="logo-icon"><img src="img/favicon.png" alt="Storysphere"></div>
+            <span>STORYSPHERE</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="🔍 Buscar mídias, usuários, autores...">
+        </div>
+        <!-- Botão Hambúrguer -->
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav class="nav">
+            <a href="index.html">Início</a>
+            <a href="explorar.html">Explorar</a>
+            <a href="comunidade.html">Comunidade</a>
+            <a href="blog.html">Blog</a>
+            <a href="sobre-nos.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+            <!-- <a href="recompensas.html">Recompensas</a> -->
+            <!-- <a href="login.html" class="btn btn-secondary">Entrar</a> -->
+            <a href="cadastro.html" class="btn btn-primary">Começe Agora</a>
+        </nav>
+    </div>
+</header>
+
+    <div class="main-container">
+        <div id="blog" class="page starfield-bg active">
+            <canvas class="starfield-canvas"></canvas>
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <div class="logo" style="justify-content: center; font-size: 2rem;">
+                        <div class="logo-icon" style="width: 60px; height: 60px;"><img src="img/favicon.png" alt="Storysphere"></div>
+                            <span>STORYSPHERE</span>
+                    </div> 
+                </div>                   
+            <div class="section">
+                <h2 class="section-title">📝 Blog da Comunidade</h2>
+
+                <div class="info-card">
+                    <h3>Últimas Postagens</h3>
+                    <p style="color: var(--text-muted);">Um espaço para compartilhar suas experiências, impressões e paixão por histórias.</p>
+                </div>
+                
+                <div class="blog-post">
+                    <h3 class="blog-title">A Arte de Contar Histórias: O que Faz um Universo ser Inesquecível?</h3>
+                    <div class="blog-meta">Postado por <strong style="color: var(--accent-gold);">@storysphere_oficial</strong> • 20 de Outubro de 2025</div>
+                    <div class="blog-content">
+                        <p>Seja nos desertos de Arrakis, nos corredores de Hogwarts ou nas ruas cyberpunk de Night City, algumas histórias nos capturam de uma forma que transcende a tela, a página ou o controle. Mas o que exatamente transforma uma boa história em uma experiência inesquecível? É o desenvolvimento de personagens? A construção de mundo? A trama intrincada?</p>
+                        <p>Nesta postagem, queremos ouvir de você, a comunidade Storysphere. Qual foi o universo que mais te marcou e por quê? Que elementos você acredita serem essenciais para criar uma narrativa verdadeiramente imersiva?</p>
+                        <p>Compartilhe suas ideias, debata com outros membros e vamos juntos explorar a magia por trás das grandes histórias!</p><br>    
+                    </div>
+                </div>
+
+                <div class="info-card" id="comments-section">
+                    <h3>💬 Comentários (3)</h3>
+                    
+                    <div class="feed-item" style="margin-bottom: 1.5rem;">
+                        <div class="feed-header">
+                            <div class="avatar">👤</div>
+                            <div>
+                                <div class="username">@leitora_voraz</div>
+                                <div class="card-info">há 15 minutos</div>
+                            </div>
+                        </div>
+                        <p>Para mim, a construção de mundo é tudo! Em "O Senhor dos Anéis", Tolkien não criou apenas uma história, mas um universo inteiro com sua própria história, idiomas e mitologia. É isso que me faz voltar sempre!</p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                            <button class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;" onclick="likePost(this)">👍 <span class="like-count">8</span></button>
+                            <button class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">Responder</button>
+                        </div>
+                    </div>
+
+                    <div class="feed-item" style="margin-bottom: 1.5rem;">
+                        <div class="feed-header">
+                            <div class="avatar">👤</div>
+                            <div>
+                                <div class="username">@gamer_hardcore</div>
+                                <div class="card-info">há 45 minutos</div>
+                            </div>
+                        </div>
+                        <p>Concordo com a @leitora_voraz, mas adiciono a importância da agência do jogador nos games. Em "The Witcher 3", as minhas escolhas moldam o mundo e o destino dos personagens. Isso cria uma conexão pessoal com a história que nenhuma outra mídia consegue replicar.</p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                            <button class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;" onclick="likePost(this)">👍 <span class="like-count">12</span></button>
+                            <button class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">Responder</button>
+                        </div>
+                    </div>
+
+                    <div class="feed-item">
+                        <div class="feed-header">
+                            <div class="avatar">👤</div>
+                            <div>
+                                <div class="username">@cinefilo22</div>
+                                <div class="card-info">há 2 horas</div>
+                            </div>
+                        </div>
+                        <p>Personagens! Uma trama incrível com personagens rasos não se sustenta. A jornada de Walter White em "Breaking Bad" é um dos arcos mais complexos e bem escritos que já vi. Você pode não concordar com ele, mas você o entende. Isso é genial.</p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                            <button class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;" onclick="likePost(this)">👍 <span class="like-count">21</span></button>
+                            <button class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">Responder</button>
+                        </div>
+                    </div>
+
+                    <div class="comment-form" style="margin-top: 2rem; border-top: 1px solid rgba(212, 165, 116, 0.1); padding-top: 2rem;">
+                        <h4 style="margin-bottom: 1rem;">Deixe seu Comentário</h4>
+                        <textarea class="form-input" placeholder="Compartilhe sua opinião..." rows="5"></textarea>
+                        <button class="btn btn-primary" style="margin-top: 1rem;">Publicar Comentário</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Todos os direitos reservados © 2025</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

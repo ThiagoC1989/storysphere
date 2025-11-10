@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Storysphere</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+<header class="header">
+    <div class="header-content">
+        <div class="logo">
+            <div class="logo-icon"><img src="img/favicon.png" alt="Storysphere"></div>
+            <span>STORYSPHERE</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="🔍 Buscar mídias, usuários, autores...">
+        </div>
+        <!-- Botão Hambúrguer -->
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav class="nav">
+            <a href="index.html">Início</a>
+            <a href="explorar.html">Explorar</a>
+            <a href="comunidade.html">Comunidade</a>
+            <a href="blog.html">Blog</a>
+            <a href="sobre-nos.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+            <!-- <a href="recompensas.html">Recompensas</a> -->
+            <!-- <a href="login.html" class="btn btn-secondary">Entrar</a> -->
+            <a href="cadastro.html" class="btn btn-primary">Começe Agora</a>
+        </nav>
+    </div>
+</header>
+
+    <div class="main-container">
+        <div id="chat" class="page starfield-bg active">
+            <canvas class="starfield-canvas"></canvas>
+            <div class="alert alert-warning" style="max-width: 1400px; margin: 2rem auto; background: none; border: 1px solid var(--accent-gold);">
+                <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">⚠️ ALERTA DE SPOILER ⚠️</div>
+                <div>Esta sala contém discussões sobre "Duna: Parte 2" e pode conter spoilers!</div>
+                <button class="btn btn-primary" style="margin-top: 1rem;">Entrar na Sala</button>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat-sidebar">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-gold);">📋 Canais</h3>
+                    <div class="channel active">💬 Geral</div>
+                    <div class="channel">🔮 Teorias</div>
+                    <div class="channel">👥 Personagens</div>
+                    <div class="channel">🎬 Cenas Favoritas</div>
+                    <div class="channel">📖 Livro vs Filme</div>
+                    <div class="channel">🎭 Final (Spoilers)</div>
+
+                    <h3 style="margin: 2rem 0 1rem; color: var(--accent-gold);">👥 Online (234)</h3>
+                    <div class="channel">@usuario1</div>
+                    <div class="channel">@usuario2</div>
+                    <div class="channel">@usuario3</div>
+                    <div style="text-align: center; color: var(--text-muted); margin-top: 1rem; font-size: 0.9rem;">... e mais 231</div>
+                </div>
+
+                <div class="chat-main">
+                    <h2 style="margin-bottom: 1rem;">💬 Chat: Duna Parte 2 - Geral</h2>
+                    
+                    <div class="chat-messages">
+                        <div class="message">
+                            <div class="message-avatar">👤</div>
+                            <div class="message-content">
+                                <div class="message-author">@cinefilo22 <span style="color: var(--text-muted); font-weight: normal; font-size: 0.85rem;">14:32</span></div>
+                                <div>Acabei de assistir! Que obra-prima! 🎬</div>
+                            </div>
+                        </div>
+
+                        <div class="message">
+                            <div class="message-avatar">👤</div>
+                            <div class="message-content">
+                                <div class="message-author">@maria_livros <span style="color: var(--text-muted); font-weight: normal; font-size: 0.85rem;">14:33</span></div>
+                                <div>A cena do deserto foi INCRÍVEL! Concordam?</div>
+                            </div>
+                        </div>
+
+                        <div class="message">
+                            <div class="message-avatar">👤</div>
+                            <div class="message-content">
+                                <div class="message-author">@joao_games <span style="color: var(--text-muted); font-weight: normal; font-size: 0.85rem;">14:35</span></div>
+                                <div>Melhor que a primeira parte, sem dúvidas! ⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+
+                        <div class="message">
+                            <div class="message-avatar">👤</div>
+                            <div class="message-content">
+                                <div class="message-author">@ana_series <span style="color: var(--text-muted); font-weight: normal; font-size: 0.85rem;">14:36</span></div>
+                                <div>Alguém mais ficou emocionado com aquela cena no final?</div>
+                            </div>
+                        </div>
+
+                        <div class="message">
+                            <div class="message-avatar">👤</div>
+                            <div class="message-content">
+                                <div class="message-author">@pedro_filmes <span style="color: var(--text-muted); font-weight: normal; font-size: 0.85rem;">14:38</span></div>
+                                <div style="background: rgba(255, 193, 7, 0.1); padding: 0.5rem; border-radius: 4px; border-left: 3px solid #ffc107;">
+                                    ⚠️ SPOILER: A reviravolta no final foi genial!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-container">
+                        <input type="text" class="chat-input" placeholder="Digite sua mensagem...">
+                        <button class="btn btn-primary">Enviar</button>
+                    </div>
+
+                    <div style="margin-top: 1rem; text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+                        🛡️ Ferramentas: <a href="#" style="color: var(--accent-gold);">Reportar</a> • <a href="#" style="color: var(--accent-gold);">Silenciar</a> • <a href="#" style="color: var(--accent-gold);">Bloquear</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Todos os direitos reservados © 2025</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

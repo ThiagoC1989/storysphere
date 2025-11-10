@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar - Storysphere</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon"><img src="img/favicon.png" alt="Storysphere"></div>
+                <span>STORYSPHERE</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="🔍 Buscar mídias, usuários, autores...">
+            </div>
+            <!-- Botão Hambúrguer -->
+            <button id="menu-toggle" class="menu-toggle">☰</button>
+            <nav class="nav">
+                <a href="index.html">Início</a>
+                <a href="explorar.html">Explorar</a>
+                <a href="comunidade.html">Comunidade</a>
+                <a href="blog.html">Blog</a>
+                <a href="sobre-nos.html">Sobre Nós</a>
+                <a href="contato.html">Contato</a>
+                <!-- <a href="recompensas.html">Recompensas</a> -->
+                <!-- <a href="login.html" class="btn btn-secondary">Entrar</a> -->
+                <a href="cadastro.html" class="btn btn-primary">Começe Agora</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div id="explorar" class="page starfield-bg active">
+            <canvas class="starfield-canvas"></canvas>
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <div class="logo" style="justify-content: center; font-size: 2rem;">
+                        <div class="logo-icon" style="width: 60px; height: 60px;"><img src="img/favicon.png" alt="Storysphere"></div>
+                            <span>STORYSPHERE</span>
+                    </div> 
+                </div>                   
+            <div class="section">
+                <h2 class="section-title">🔍 Explorar Conteúdo</h2>
+                
+                <div class="info-card">
+                    <h3>Categorias</h3>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+                        <button class="btn btn-primary">Todos</button>
+                        <button class="btn btn-secondary">🎬 Filmes</button>
+                        <button class="btn btn-secondary">📚 Livros</button>
+                        <button class="btn btn-secondary">🎮 Jogos</button>
+                        <button class="btn btn-secondary">📺 Séries</button>
+                        <button class="btn btn-secondary">🎵 Música</button>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">🎬 Filmes em Destaque</h3>
+                    <div class="grid">
+                        <a href="media.html" class="card" style="text-decoration: none;">
+                            <div class="card-image"><img src="img/duna2.jpeg" alt="Duna: Parte 2"></div>
+                            <div class="card-content">
+                                <div class="card-title">Duna: Parte 2</div>
+                                <div class="card-info">2024 • Ficção Científica</div>
+                                <div class="rating">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="oppenheimer.html" class="card" style="text-decoration: none;">
+                            <div class="card-image"><img src="img/oppenheimer.jpg" alt="Oppenheimer"></div>
+                            <div class="card-content">
+                                <div class="card-title">Oppenheimer</div>
+                                <div class="card-info">2023 • Biografia</div>
+                                <div class="rating">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">☆</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="barbie.html" class="card" style="text-decoration: none;">
+                            <div class="card-image"><img src="img/barbie.jpg" alt="Barbie"></div>
+                            <div class="card-content">
+                                <div class="card-title">Barbie</div>
+                                <div class="card-info">2023 • Comédia</div>
+                                <div class="rating">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">☆</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="interstellar.html" class="card" style="text-decoration: none;">
+                            <div class="card-image"><img src="img/interestelar.png" alt="Interestelar"></div>
+                            <div class="card-content">
+                                <div class="card-title">Interestelar</div>
+                                <div class="card-info">2014 • Ficção Científica</div>
+                                <div class="rating">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="a-origem.html" class="card" style="text-decoration: none;">
+                            <div class="card-image"><img src="img/aorigem.jpg" alt="A Origem"></div>
+                            <div class="card-content">
+                                <div class="card-title">A Origem</div>
+                                <div class="card-info">2010 • Ação</div>
+                                <div class="rating">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div style="margin-top: 3rem;">
+                    <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">📚 Livros Populares</h3>
+                    <div class="grid">
+                        <a href="1984.html" class="card" style="text-decoration: none;">
+                            <div class="card-image"><img src="img/livro1984.jpg" alt="1984"></div>
+                            <div class="card-content">
+                                <div class="card-title">1984</div>
+                                <div class="card-info">George Orwell</div>
+                                <div class="rating">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="o-hobbit.html" class="card" style="text-decoration: none;">
+                            <div class="card-image"><img src="img/ohobbit.jpg" alt="O Hobbit"></div>
+                            <div class="card-content">
+                                <div class="card-title">O Hobbit</div>
+                                <div class="card-info">J.R.R. Tolkien</div>
+                                <div class="rating">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="fundacao.html" class="card" style="text-decoration: none;">
+                            <div class="card-image"><img src="img/fundacao.jpg" alt="Fundação"></div>
+                            <div class="card-content">
+                                <div class="card-title">Fundação</div>
+                                <div class="card-info">Isaac Asimov</div>
+                                <div class="rating">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">☆</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="neuromancer.html" class="card" style="text-decoration: none;">
+                            <div class="card-image"><img src="img/neuromancer.jpg" alt="Neuromancer"></div>
+                            <div class="card-content">
+                                <div class="card-title">Neuromancer</div>
+                                <div class="card-info">William Gibson</div>
+                                <div class="rating">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">☆</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div style="margin-top: 3rem;">
+                    <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">🎮 Jogos Aclamados</h3>
+                    <div class="grid">
+                        <a href="baldurs-gate-3.html" class="card" style="text-decoration: none;">
+                            <div class="card-image"><img src="img/baldur.jpg" alt="Baldur's Gate 3"></div>
+                            <div class="card-content">
+                                <div class="card-title">Baldur's Gate 3</div>
+                                <div class="card-info">2023 • RPG</div>
+                                <div class="rating">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="elden-ring.html" class="card" style="text-decoration: none;">
+                            <div class="card-image"><img src="img/eldenring.jpg" alt="Elden Ring"></div>
+                            <div class="card-content">
+                                <div class="card-title">Elden Ring</div>
+                                <div class="card-info">2022 • Action RPG</div>
+                                <div class="rating">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="the-last-of-us.html" class="card" style="text-decoration: none;">
+                            <div class="card-image"><img src="img/thelastofus.png" alt="The Last of Us"></div>
+                            <div class="card-content">
+                                <div class="card-title">The Last of Us</div>
+                                <div class="card-info">2013 • Aventura</div>
+                                <div class="rating">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="red-dead-redemption-2.html" class="card" style="text-decoration: none;">
+                            <div class="card-image"><img src="img/reddead2.png" alt="Red Dead Redemption 2"></div>
+                            <div class="card-content">
+                                <div class="card-title">Red Dead Redemption 2</div>
+                                <div class="card-info">2018 • Ação</div>
+                                <div class="rating">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Todos os direitos reservados © 2025</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

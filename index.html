@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storysphere - Seu Universo de Histórias</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+<header class="header">
+    <div class="header-content">
+        <div class="logo">
+            <div class="logo-icon"><img src="img/favicon.png" alt="Storysphere"></div>
+            <span>STORYSPHERE</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="🔍 Buscar mídias, usuários, autores...">
+        </div>
+        <!-- Botão Hambúrguer -->
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav class="nav">
+            <a href="index.html">Início</a>
+            <a href="explorar.html">Explorar</a>
+            <a href="comunidade.html">Comunidade</a>
+            <a href="blog.html">Blog</a>
+            <a href="sobre-nos.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+            <!-- <a href="recompensas.html">Recompensas</a> -->
+            <!-- <a href="login.html" class="btn btn-secondary">Entrar</a> -->
+            <a href="cadastro.html" class="btn btn-primary">Começe Agora</a>
+        </nav>
+    </div>
+</header>
+
+    <div class="main-container">
+        
+        <div id="home" class="page active">
+            <section class="hero starfield-bg">
+                <canvas class="starfield-canvas"></canvas>
+                <div class="hero-content">
+                    <img class="image" src="img/favicon.png" alt="Logo StorySphere">
+                    <h1><strong>STORYSPHERE</strong></h1>
+                    <h2><strong>SEU UNIVERSO DE <span class="hero-highlight">HISTÓRIAS</span>, SEM SPOILERS.</strong></h2>
+                    <p>Conecte-se. Avalie. Ganhe recompensas.<br>Descubra filmes, livros e jogos.</p>
+                    <div class="hero-buttons">
+                        <a href="cadastro.html" class="btn btn-primary">Começar Agora</a>
+                        <a href="explorar.html" class="btn btn-secondary">Explorar Conteúdo</a>
+                    </div>                    
+                </div>                
+            </section>
+            
+            <section class="section starfield-bg">
+                <canvas class="starfield-canvas"></canvas>
+                <h2 class="section-title">🔥 Recomendações em Destaque</h2>
+                <div class="carousel-container">
+                    <button class="carousel-nav prev" onclick="moveCarousel(-1)">‹</button>
+                    <button class="carousel-nav next" onclick="moveCarousel(1)">›</button>
+                    
+                    <div class="carousel-wrapper" id="carouselWrapper">
+                        <div class="carousel-slide">
+                            <div class="carousel-image">
+                                <img src="img/duna2.jpeg" alt="Duna: Parte 2">
+                            </div>
+                            <div class="carousel-content">
+                                <h3>Duna: Parte 2</h3>
+                                <div class="rating" style="font-size: 1.5rem; margin-bottom: 1rem;">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                                    <span style="margin-left: 0.5rem; color: var(--accent-gold);">4.8/5</span>
+                                </div>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">2024 • Ficção Científica • 2h 46min</p>
+                                <p style="line-height: 1.8;">Paul Atreides une forças com Chani e os Fremen enquanto busca vingança contra os conspiradores que destruíram sua família.</p><br>
+                                <a href="media.html" class="btn btn-primary" style="margin-top: 1.5rem;">Ver Detalhes</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="carousel-image">
+                                <img src="img/aguerradostronos.jpg" alt="A Guerra dos Tronos">
+                            </div>
+                            <div class="carousel-content">
+                                <h3>A Guerra dos Tronos</h3>
+                                <div class="rating" style="font-size: 1.5rem; margin-bottom: 1rem;">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                                    <span style="margin-left: 0.5rem; color: var(--accent-gold);">4.9/5</span>
+                                </div>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">George R.R. Martin • Fantasia Épica</p>
+                                <p style="line-height: 1.8;">O primeiro livro da série As Crônicas de Gelo e Fogo. Uma trama magistral de poder, traição e magia.</p><br>
+                                <a href="guerra-dos-tronos.html" class="btn btn-primary" style="margin-top: 1.5rem;">Ver Detalhes</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="carousel-image">
+                                <img src="img/baldur.jpg" alt="Baldur's Gate 3">
+                            </div>
+                            <div class="carousel-content">
+                                <h3>Baldur's Gate 3</h3>
+                                <div class="rating" style="font-size: 1.5rem; margin-bottom: 1rem;">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                                    <span style="margin-left: 0.5rem; color: var(--accent-gold);">5.0/5</span>
+                                </div>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">2023 • RPG • Larian Studios</p>
+                                <p style="line-height: 1.8;">Reúna seu grupo e retorne aos Reinos Esquecidos em uma história de amizade, traição, sacrifício e poder absoluto.</p><br>
+                                <a href="baldurs-gate-3.html" class="btn btn-primary" style="margin-top: 1.5rem;">Ver Detalhes</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="carousel-image">
+                                <img src="img/breakingbad.jpg" alt="Breaking Bad">
+                            </div>
+                            <div class="carousel-content">
+                                <h3>Breaking Bad</h3>
+                                <div class="rating" style="font-size: 1.5rem; margin-bottom: 1rem;">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                                    <span style="margin-left: 0.5rem; color: var(--accent-gold);">4.9/5</span>
+                                </div>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">2008-2013 • Drama • 5 Temporadas</p>
+                                <p style="line-height: 1.8;">Um professor de química se volta para o crime para garantir o futuro de sua família após um diagnóstico de câncer.</p><br>
+                                <a href="breaking-bad.html" class="btn btn-primary" style="margin-top: 1.5rem;">Ver Detalhes</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="carousel-image">
+                                <img src="img/oppenheimer.jpg" alt="Oppenheimer">
+                            </div>
+                            <div class="carousel-content">
+                                <h3>Oppenheimer</h3>
+                                <div class="rating" style="font-size: 1.5rem; margin-bottom: 1rem;">
+                                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span style="color: var(--text-muted);">☆</span>
+                                    <span style="margin-left: 0.5rem; color: var(--accent-gold);">4.7/5</span>
+                                </div>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">2023 • Biografia • 3h 00min</p>
+                                <p style="line-height: 1.8;">A história de J. Robert Oppenheimer e seu papel no desenvolvimento da bomba atômica.</p><br>
+                                <a href="oppenheimer.html" class="btn btn-primary" style="margin-top: 1.5rem;">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-dots" id="carouselDots"></div>
+                </div>
+            </section>
+
+            <section class="section starfield-bg">
+                <canvas class="starfield-canvas"></canvas>
+                <h2 class="section-title">📰 Feed da Comunidade</h2>
+                <div class="feed">
+                    <div class="feed-item">
+                        <div class="feed-header">
+                            <a href="cinefilo22.html" class="avatar" style="text-decoration: none;">👤</a>
+                            <div>
+                                <a href="cinefilo22.html" class="username" style="text-decoration: none; color: var(--accent-gold); display: inline-block;">@cinefilo22</a>
+                                <div class="card-info">Avaliou Duna: Parte 2 • há 2 horas</div>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p style="margin-top: 1rem;">Uma obra-prima visual e narrativa. Denis Villeneuve superou todas as expectativas!</p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(212, 165, 116, 0.1);">
+                            <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;" onclick="likePost(this)">👍 <span class="like-count">24</span></button>
+                            <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">💬 12 comentários</button>
+                            <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">🔄 Compartilhar</button>
+                        </div>
+                    </div>
+
+                    <div class="feed-item">
+                        <div class="feed-header">
+                            <div class="avatar">👤</div>
+                            <div>
+                                <div class="username">@maria_livros</div>
+                                <div class="card-info">📚 Está lendo: <strong style="color: var(--accent-gold);">1984</strong> • há 3 horas</div>
+                            </div>
+                        </div>
+                        <div style="background: rgba(212, 165, 116, 0.1); padding: 1rem; border-radius: 8px; margin-top: 0.5rem; border-left: 3px solid var(--accent-gold);">
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <div style="width: 60px; height: 90px; border-radius: 6px; overflow: hidden; flex-shrink: 0;">
+                                    <img src="img/livro1984.jpg" alt="1984" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div>
+                                    <div style="font-weight: bold;">1984</div>
+                                    <div style="color: var(--text-muted); font-size: 0.9rem;">George Orwell</div>
+                                    <div style="margin-top: 0.5rem;">
+                                        <div style="font-size: 0.85rem; color: var(--text-muted);">Progresso: 65%</div>
+                                        <div style="background: rgba(10, 22, 40, 0.5); height: 6px; border-radius: 3px; margin-top: 0.3rem; overflow: hidden;">
+                                            <div style="background: var(--accent-gold); height: 100%; width: 65%; transition: width 0.5s;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="margin-top: 1rem;">Finalmente lendo este clássico! A distopia de Orwell é assustadoramente atual. 📖</p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(212, 165, 116, 0.1);">
+                            <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;" onclick="likePost(this)">👍 <span class="like-count">18</span></button>
+                            <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">💬 5 comentários</button>
+                            <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">🔄 Compartilhar</button>
+                        </div>
+                    </div>
+
+                    <div class="feed-item">
+                        <div class="feed-header">
+                            <div class="avatar">👤</div>
+                            <div>
+                                <div class="username">@joao_games</div>
+                                <div class="card-info">🎮 Está jogando: <strong style="color: var(--accent-gold);">Baldur's Gate 3</strong> • há 5 horas</div>
+                            </div>
+                        </div>
+                        <div style="background: rgba(212, 165, 116, 0.1); padding: 1rem; border-radius: 8px; margin-top: 0.5rem; border-left: 3px solid var(--accent-gold);">
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <div style="width: 60px; height: 90px; border-radius: 6px; overflow: hidden; flex-shrink: 0;">
+                                    <img src="img/baldur.jpg" alt="Baldur's Gate 3" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div style="flex: 1;">
+                                    <div style="font-weight: bold;">Baldur's Gate 3</div>
+                                    <div style="color: var(--text-muted); font-size: 0.9rem;">Larian Studios • RPG</div>
+                                    <div style="margin-top: 0.5rem;">
+                                        <div style="font-size: 0.85rem; color: var(--text-muted);">Tempo de jogo: 47h</div>
+                                        <div style="font-size: 0.85rem; color: var(--accent-gold);">🏆 12 conquistas desbloqueadas</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="margin-top: 1rem;">Já estou viciado! Melhor RPG dos últimos anos. 🎮 A história é incrível e as escolhas realmente importam!</p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(212, 165, 116, 0.1);">
+                            <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;" onclick="likePost(this)">👍 <span class="like-count">32</span></button>
+                            <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">💬 8 comentários</button>
+                            <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">🔄 Compartilhar</button>
+                        </div>
+                    </div>
+
+                    <div class="feed-item">
+                        <div class="feed-header">
+                            <div class="avatar">👤</div>
+                            <div>
+                                <div class="username">@ana_series</div>
+                                <div class="card-info">📺 Está assistindo: <strong style="color: var(--accent-gold);">Breaking Bad</strong> • há 1 dia</div>
+                            </div>
+                        </div>
+                        <div style="background: rgba(212, 165, 116, 0.1); padding: 1rem; border-radius: 8px; margin-top: 0.5rem; border-left: 3px solid var(--accent-gold);">
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <div style="width: 60px; height: 90px; border-radius: 6px; overflow: hidden; flex-shrink: 0;">
+                                    <img src="img/breakingbad.jpg" alt="Breaking Bad" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div>
+                                    <div style="font-weight: bold;">Breaking Bad</div>
+                                    <div style="color: var(--text-muted); font-size: 0.9rem;">5 temporadas • Drama</div>
+                                    <div style="margin-top: 0.5rem;">
+                                        <div style="font-size: 0.85rem; color: var(--text-muted);">Temporada 3, Episódio 8</div>
+                                        <div style="background: rgba(10, 22, 40, 0.5); height: 6px; border-radius: 3px; margin-top: 0.3rem; overflow: hidden;">
+                                            <div style="background: var(--accent-gold); height: 100%; width: 55%; transition: width 0.5s;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="margin-top: 1rem;">Não consigo parar de assistir! Cada episódio é melhor que o anterior. 🔥</p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(212, 165, 116, 0.1);">
+                            <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;" onclick="likePost(this)">👍 <span class="like-count">27</span></button>
+                            <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">💬 15 comentários</button>
+                            <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">🔄 Compartilhar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>Todos os direitos reservados © 2025</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

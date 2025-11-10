@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baldur's Gate 3 - Storysphere</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+<header class="header">
+    <div class="header-content">
+        <div class="logo">
+            <div class="logo-icon"><img src="img/favicon.png" alt="Storysphere"></div>
+            <span>STORYSPHERE</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="🔍 Buscar mídias, usuários, autores...">
+        </div>
+        <!-- Botão Hambúrguer -->
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav class="nav">
+            <a href="index.html">Início</a>
+            <a href="explorar.html">Explorar</a>
+            <a href="comunidade.html">Comunidade</a>
+            <a href="blog.html">Blog</a>
+            <a href="sobre-nos.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+            <!-- <a href="recompensas.html">Recompensas</a> -->
+            <!-- <a href="login.html" class="btn btn-secondary">Entrar</a> -->
+            <a href="cadastro.html" class="btn btn-primary">Começe Agora</a>
+        </nav>
+    </div>
+</header>
+
+    <div class="main-container">
+        <div id="media" class="page active">
+            <div class="media-hero">
+                <div>
+                    <div class="media-poster"><img src="img/baldur.jpg" alt="Baldur's Gate 3" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;"></div>
+                    <div class="action-buttons" style="flex-direction: column;">
+                        <button class="btn btn-primary" style="width: 100%;">➕ Adicionar à Wishlist</button>
+                        <button class="btn btn-secondary" style="width: 100%;">✓ Já Joguei</button>
+                        <button class="btn btn-secondary" style="width: 100%;">🎮 Estou Jogando</button>
+                        <button class="btn btn-secondary" style="width: 100%;">🎯 Quero Jogar</button>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🎮 Onde Jogar</h3>
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <button class="btn btn-secondary">Steam (PC)</button>
+                            <button class="btn btn-secondary">PlayStation 5</button>
+                            <button class="btn btn-secondary">Xbox Series X/S</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media-info">
+                    <h1>Baldur's Gate 3</h1>
+                    <div class="media-meta">2023 • RPG • Larian Studios</div>
+                    
+                    <div class="stat" style="display: inline-block; margin-bottom: 2rem;">
+                        <div class="stat-number">5.0</div>
+                        <div class="stat-label">Nota da Comunidade</div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>📝 Sinopse</h3>
+                        <p>Reúna seu grupo e retorne aos Reinos Esquecidos em uma história de amizade e traição, sacrifício e sobrevivência, e a sedução do poder absoluto. Habilidades misteriosas estão despertando dentro de você, extraídas de um parasita Devorador de Mentes plantado em seu cérebro. Resista e vire a escuridão contra si mesma. Ou abrace a corrupção e torne-se o mal supremo.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🕹️ Ficha Técnica</h3>
+                        <div style="line-height: 2;">
+                            <div><strong>Desenvolvedora:</strong> Larian Studios</div>
+                            <div><strong>Gêneros:</strong> RPG, Aventura, Estratégia</div>
+                            <div><strong>Lançamento:</strong> 03 de Agosto de 2023</div>
+                            <div><strong>Plataformas:</strong> PC, PS5, Xbox Series X/S</div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>⭐ Sua Avaliação</h3>
+                        <div class="rating" style="font-size: 2rem; margin: 1rem 0;">
+                            <span class="star" style="cursor: pointer;">☆</span>
+                            <span class="star" style="cursor: pointer;">☆</span>
+                            <span class="star" style="cursor: pointer;">☆</span>
+                            <span class="star" style="cursor: pointer;">☆</span>
+                            <span class="star" style="cursor: pointer; color: var(--text-muted);">☆</span>
+                        </div>
+                        <textarea class="form-input" placeholder="Escreva sua resenha aqui..." rows="4"></textarea>
+                        <div style="margin: 1rem 0;">
+                            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox" style="width: 20px; height: 20px;">
+                                <span>Marcar como spoiler</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary">Publicar Avaliação</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Todos os direitos reservados © 2025</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

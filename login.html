@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Storysphere</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+<header class="header">
+    <div class="header-content">
+        <div class="logo">
+            <div class="logo-icon"><img src="img/favicon.png" alt="Storysphere"></div>
+            <span>STORYSPHERE</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="🔍 Buscar mídias, usuários, autores...">
+        </div>
+        <!-- Botão Hambúrguer -->
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav class="nav">
+            <a href="index.html">Início</a>
+            <a href="explorar.html">Explorar</a>
+            <a href="comunidade.html">Comunidade</a>
+            <a href="blog.html">Blog</a>
+            <a href="sobre-nos.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+            <!-- <a href="recompensas.html">Recompensas</a> -->
+            <!-- <a href="login.html" class="btn btn-secondary">Entrar</a> -->
+            <a href="cadastro.html" class="btn btn-primary">Começe Agora</a>
+        </nav>
+    </div>
+</header>
+
+    <div class="main-container">
+
+        <div id="login" class="page starfield-bg active">
+            <canvas class="starfield-canvas"></canvas>
+            <div class="form-container">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <div class="logo" style="justify-content: center; font-size: 2rem;">
+                        <div class="logo-icon" style="width: 60px; height: 60px;"><img src="img/favicon.png" alt="Storysphere"></div>
+                        <span>STORYSPHERE</span>
+                    </div>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Bem-vindo de volta!</p>
+                </div>
+
+                <div class="form-card">
+                    <div class="tabs" style="border: none; margin-bottom: 2rem;">
+                        <a href="login.html" class="tab active" style="text-decoration: none;">Login</a>
+                        <a href="cadastro.html" class="tab" style="text-decoration: none;">Cadastro</a>
+                    </div>
+
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">E-mail</label>
+                            <input type="email" class="form-input" placeholder="seu@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Senha</label>
+                            <input type="password" class="form-input" placeholder="••••••••">
+                        </div>
+
+                        <div style="text-align: right; margin-bottom: 1.5rem;">
+                            <a href="#" style="color: var(--accent-gold); font-size: 0.9rem;">Esqueceu a senha?</a>
+                        </div>
+
+                        <a href="perfil.html" class="btn btn-primary" style="width: 100%; text-align: center; box-sizing: border-box; display: block; text-decoration: none;">Entrar</a>
+                    </form>
+
+                    <div style="text-align: center; margin-top: 1.5rem; color: var(--text-muted);">
+                        Ou continue com
+                    </div>
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                        <button class="btn btn-secondary" style="flex: 1;">Google</button>
+                        <button class="btn btn-secondary" style="flex: 1;">Facebook</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>Todos os direitos reservados © 2025</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

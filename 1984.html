@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1984 - Storysphere</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon"><img src="img/favicon.png" alt="Storysphere"></div>
+                <span>STORYSPHERE</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="🔍 Buscar mídias, usuários, autores...">
+            </div>
+            <!-- Botão Hambúrguer -->
+            <button id="menu-toggle" class="menu-toggle">☰</button>
+            <nav class="nav">
+                <a href="index.html">Início</a>
+                <a href="explorar.html">Explorar</a>
+                <a href="comunidade.html">Comunidade</a>
+                <a href="blog.html">Blog</a>
+                <a href="sobre-nos.html">Sobre Nós</a>
+                <a href="contato.html">Contato</a>
+                <!-- <a href="recompensas.html">Recompensas</a> -->
+                <!-- <a href="login.html" class="btn btn-secondary">Entrar</a> -->
+                <a href="cadastro.html" class="btn btn-primary">Começe Agora</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div id="media" class="page active">
+            <div class="media-hero">
+                <div>
+                    <div class="media-poster"><img src="img/livro1984.jpg" alt="1984" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;"></div>
+                    <div class="action-buttons" style="flex-direction: column;">
+                        <button class="btn btn-primary" style="width: 100%;">➕ Adicionar à Wishlist</button>
+                        <button class="btn btn-secondary" style="width: 100%;">✓ Já Li</button>
+                        <button class="btn btn-secondary" style="width: 100%;">📖 Estou Lendo</button>
+                        <button class="btn btn-secondary" style="width: 100%;">🎯 Quero Ler</button>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>📚 Onde Comprar</h3>
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <button class="btn btn-secondary">Amazon</button>
+                            <button class="btn btn-secondary">Livrarias</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media-info">
+                    <h1>1984</h1>
+                    <div class="media-meta">George Orwell • Ficção Distópica</div>
+                    
+                    <div class="stat" style="display: inline-block; margin-bottom: 2rem;">
+                        <div class="stat-number">4.8</div>
+                        <div class="stat-label">Nota da Comunidade</div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>📝 Sinopse</h3>
+                        <p>Em um mundo de vigilância onipresente, repressão e manipulação da verdade, Winston Smith se rebela silenciosamente contra o regime totalitário do Partido e seu líder, o Grande Irmão. Uma obra atemporal sobre os perigos da perda da individualidade e do pensamento crítico.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>📚 Ficha Técnica</h3>
+                        <div style="line-height: 2;">
+                            <div><strong>Autor:</strong> George Orwell</div>
+                            <div><strong>Gênero:</strong> Ficção Científica, Distopia</div>
+                            <div><strong>Publicação Original:</strong> 1949</div>
+                            <div><strong>Editora (Brasil):</strong> Companhia das Letras</div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>⭐ Sua Avaliação</h3>
+                        <div class="rating" style="font-size: 2rem; margin: 1rem 0;">
+                            <span class="star" style="cursor: pointer;">☆</span><span class="star" style="cursor: pointer;">☆</span><span class="star" style="cursor: pointer;">☆</span><span class="star" style="cursor: pointer;">☆</span><span class="star" style="cursor: pointer; color: var(--text-muted);">☆</span>
+                        </div>
+                        <textarea class="form-input" placeholder="Escreva sua resenha aqui..." rows="4"></textarea>
+                        <button class="btn btn-primary" style="margin-top: 1rem;">Publicar Avaliação</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Todos os direitos reservados © 2025</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recompensas - Storysphere</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+<header class="header">
+    <div class="header-content">
+        <div class="logo">
+            <div class="logo-icon"><img src="img/favicon.png" alt="Storysphere"></div>
+            <span>STORYSPHERE</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="🔍 Buscar mídias, usuários, autores...">
+        </div>
+        <!-- Botão Hambúrguer -->
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav class="nav">
+            <a href="index.html">Início</a>
+            <a href="explorar.html">Explorar</a>
+            <a href="comunidade.html">Comunidade</a>
+            <a href="blog.html">Blog</a>
+            <a href="sobre-nos.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+            <!-- <a href="recompensas.html">Recompensas</a> -->
+            <!-- <a href="login.html" class="btn btn-secondary">Entrar</a> -->
+            <a href="cadastro.html" class="btn btn-primary">Começe Agora</a>
+        </nav>
+    </div>
+</header>
+
+    <div class="main-container">
+        <div id="recompensas" class="page starfield-bg active">
+            <canvas class="starfield-canvas"></canvas>
+            <div class="section">
+                <h2 class="section-title">🏆 Pontos Storysphere</h2>
+
+                <div class="tabs">
+                    <button class="tab active" onclick="showRewardsTab('pontos')">💰 Meus Pontos</button>
+                    <button class="tab" onclick="showRewardsTab('catalogo')">🛍️ Catálogo</button>
+                    <button class="tab" onclick="showRewardsTab('historico')">📜 Histórico</button>
+                </div>
+
+                <div id="pontos" class="rewards-tab-content" style="display: block;">
+                    <div class="points-display">
+                        <div class="points-number">12.450</div>
+                        <div style="font-size: 1.3rem; color: var(--dark-bg);">Pontos Disponíveis</div>
+                        <button class="btn btn-secondary" style="margin-top: 1.5rem;" onclick="showRewardsTab('catalogo')">Ver Catálogo de Recompensas</button>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>📊 Como Ganhar Pontos</h3>
+                        <div style="margin-top: 1rem;">
+                            <div style="display: flex; justify-content: space-between; padding: 1rem; border-bottom: 1px solid rgba(212, 165, 116, 0.1);">
+                                <span>✍️ Escrever resenha</span>
+                                <strong style="color: var(--accent-gold);">50 pontos</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 1rem; border-bottom: 1px solid rgba(212, 165, 116, 0.1);">
+                                <span>⭐ Avaliar mídia</span>
+                                <strong style="color: var(--accent-gold);">10 pontos</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 1rem; border-bottom: 1px solid rgba(212, 165, 116, 0.1);">
+                                <span>💬 Participar em chat (por hora)</span>
+                                <strong style="color: var(--accent-gold);">5 pontos</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 1rem; border-bottom: 1px solid rgba(212, 165, 116, 0.1);">
+                                <span>👍 Receber curtida em resenha</span>
+                                <strong style="color: var(--accent-gold);">2 pontos</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 1rem;">
+                                <span>🎯 Completar conquistas</span>
+                                <strong style="color: var(--accent-gold);">100-500 pontos</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>📈 Histórico Recente</h3>
+                        <div style="margin-top: 1rem;">
+                            <div style="display: flex; justify-content: space-between; padding: 0.8rem; border-bottom: 1px solid rgba(212, 165, 116, 0.1);">
+                                <div>
+                                    <div>Resenha de "Duna 2"</div>
+                                    <div style="color: var(--text-muted); font-size: 0.85rem;">05/10/2024</div>
+                                </div>
+                                <strong style="color: #4caf50;">+50 pts</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.8rem; border-bottom: 1px solid rgba(212, 165, 116, 0.1);">
+                                <div>
+                                    <div>10 avaliações</div>
+                                    <div style="color: var(--text-muted); font-size: 0.85rem;">03/10/2024</div>
+                                </div>
+                                <strong style="color: #4caf50;">+100 pts</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.8rem;">
+                                <div>
+                                    <div>Conquista "Crítico"</div>
+                                    <div style="color: var(--text-muted); font-size: 0.85rem;">01/10/2024</div>
+                                </div>
+                                <strong style="color: #4caf50;">+500 pts</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="catalogo" class="rewards-tab-content" style="display: none;">
+                    <h3 style="margin-bottom: 1.5rem;">🛍️ Catálogo de Recompensas</h3>
+                    <div class="grid">
+                        <div class="reward-card">
+                            <div class="reward-image"><img src="img/amazon.jpg" alt="Amazon" style="width: 200px;"></div>
+                            <div class="reward-content">
+                                <h4>Gift Card Amazon</h4>
+                                <div class="card-info">Valor: R$ 50,00</div>
+                                <div class="reward-points">5.000 pontos</div>
+                                <button class="btn btn-primary" style="width: 100%;">Resgatar</button>
+                            </div>
+                        </div>
+
+                        <div class="reward-card">
+                            <div class="reward-image"><img src="img/netflix.png" alt="Netflix" style="width: 200x; height: 202px;"></div>
+                            <div class="reward-content">
+                                <h4>Netflix Premium</h4>
+                                <div class="card-info">1 mês de assinatura</div>
+                                <div class="reward-points">8.000 pontos</div>
+                                <button class="btn btn-primary" style="width: 100%;">Resgatar</button>
+                            </div>
+                        </div>
+
+                        <div class="reward-card">
+                            <div class="reward-image"><img src="img/steam.png" alt="Steam" style="width: 200px;"></div>
+                            <div class="reward-content">
+                                <h4>Steam Wallet</h4>
+                                <div class="card-info">Crédito: R$ 25,00</div>
+                                <div class="reward-points">3.500 pontos</div>
+                                <button class="btn btn-primary" style="width: 100%;">Resgatar</button>
+                            </div>
+                        </div>
+
+                        <div class="reward-card">
+                            <div class="reward-image"><img src="img/assinante.png" alt="Assinante" style="width: 200px;"></div>
+                            <div class="reward-content">
+                                <h4>Selo Exclusivo</h4>
+                                <div class="card-info">Edição Limitada</div>
+                                <div class="reward-points">2.000 pontos</div>
+                                <button class="btn btn-primary" style="width: 100%;">Resgatar</button>
+                            </div>
+                        </div>
+
+                        <div class="reward-card">
+                            <div class="reward-image"><img src="img/livraria.jpg" alt="Livraria" style="width: 200px;"></div>
+                            <div class="reward-content">
+                                <h4>Voucher Livraria</h4>
+                                <div class="card-info">Valor: R$ 30,00</div>
+                                <div class="reward-points">4.000 pontos</div>
+                                <button class="btn btn-primary" style="width: 100%;">Resgatar</button>
+                            </div>
+                        </div>
+
+                        <div class="reward-card">
+                            <div class="reward-image"><img src="img/cinema.jpg" alt="Cinema" style="width: 200px;"></div>
+                            <div class="reward-content">
+                                <h4>Ingresso Cinema</h4>
+                                <div class="card-info">1 ingresso 2D</div>
+                                <div class="reward-points">3.000 pontos</div>
+                                <button class="btn btn-primary" style="width: 100%;">Resgatar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="historico" class="rewards-tab-content" style="display: none;">
+                    <h3 style="margin-bottom: 1.5rem;">📜 Histórico de Resgates</h3>
+                    <div class="info-card">
+                        <div style="text-align: center; padding: 2rem; color: var(--text-muted);">
+                            Você ainda não resgatou nenhuma recompensa.
+                            <br><br>
+                            <button class="btn btn-primary" onclick="showRewardsTab('catalogo')">Ver Catálogo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Todos os direitos reservados © 2025</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
